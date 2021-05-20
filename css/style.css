@@ -2,16 +2,27 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    text-decoration: none;
+
+    color: #fff;
+}
+
+.textos {
+    color: #000;
 }
 
 header {
-    background-color: #222291;
+    top: 0;
+    background-color: #00022E;
+
+    position: fixed;
+    width: 100%;
     
     display: flex;
     align-items: center;
     justify-content: space-around;
 
-    padding: 20px;
+    padding: 15px;
 }
 
 .list {
@@ -21,11 +32,41 @@ header {
 }
 
 .list.itens {
-    font-size: .8rem;
+    transition: all 1s;
+
+    border-radius: 10px;
+
+    padding: 7px; 
+}
+
+.list.itens:hover {
+    background: #02066f;
+}
+
+.list.itens a {
+    transition: all 1s;
+    font-size: 1rem;
     font-family: Arial, sans-serif;
     color: #fff;
+    font-weight: 500;
 }
 
 .padd {
     padding: 0 10px 0 0;
+}
+
+section {
+    margin-top: 70px;
+}
+
+footer {
+    background-color: #00022E;
+    position: relative;
+    bottom: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 5px;
 }
