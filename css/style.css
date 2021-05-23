@@ -6,7 +6,30 @@
 
     color: #fff;
 
-    overflow: hidden;
+    overflow-x: hidden;
+}
+
+.img.tamanho {
+    width: 420px;
+    height: 739px;
+}
+
+.shadow {
+    box-shadow: 1px 1px 0px #222, 2px 2px 0px #222, 3px 3px 0px #222, 4px 4px 0px #222, 5px 5px 0px #222,
+    6px 6px 0px #222 !important;
+}
+
+.title {
+    margin-bottom: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+  
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #00022E;
 }
 
 html, body {height:100%;}
@@ -33,7 +56,8 @@ input[type=number] {
 header {
     top: 0;
     background-color: #00022E;
-    width: calc(100% - 15px);
+    width: 100%;
+    position: fixed;
     
     display: flex;
     align-items: center;
@@ -73,19 +97,34 @@ header {
 }
 
 section {
-    margin-top: 20px;
+    margin-top: 80px;
     margin-bottom: 20px;
-    height: 50%;
 }
 
 .section.card {
     width: 60%;
-    height: 60%;
 
     margin-left: auto;
     margin-right: auto;
     
     margin-bottom: 10px;
+}
+
+.section.card.input {
+    height: 60%;
+}
+
+.textos.paragrafo {
+    text-align: justify;
+    font-size: 1.3rem;
+}
+
+.flex.imgs.texto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-direction: column;
 }
 
 .section.card.logar {
@@ -102,7 +141,38 @@ section {
     flex-direction: column;
 
     width: 100%;
-}   
+}
+
+.flex.section.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    flex-direction: column;
+}
+
+.button.video {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.botao.centro.flex {
+    width: 250px;
+    height: 40px;
+    background-color: #00022E;
+    border-radius: 10px;
+
+    font-size: 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .forms {
     width: 60%;
@@ -146,6 +216,10 @@ footer {
     justify-content: space-around;
 
     padding: 5px;
+}
+
+footer.no-absolute {
+    position: relative !important;
 }
 
 .flex.itens.footer {
