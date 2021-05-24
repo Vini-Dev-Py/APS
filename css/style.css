@@ -116,7 +116,7 @@ section {
 
 .textos.paragrafo {
     text-align: justify;
-    font-size: 1.3rem;
+    font-size: 1rem;
 }
 
 .flex.imgs.texto {
@@ -230,6 +230,29 @@ input:active, input:focus {
 
 .conta.verificar:focus, .conta.verificar:active {
     background-color: #111562;
+}
+
+.iframe { 
+    width:100%;
+}
+
+iframe { 
+    width: 100%;
+    height: 32rem;
+}
+
+iframe.list {
+    height: 7rem;
+}
+
+.flex.conteudo.img {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.img.basico {
+    
 }
 
 footer {
