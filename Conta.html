@@ -44,6 +44,16 @@
             </ul>
         </div>
     </header>
+    <div id="container" class="container popup">
+        <div class="popup button">
+            <div id="popup" class="textos">
+
+            </div>
+            <button onclick="mudarDePagina()" class="conta voltar">
+                Voltar
+            </button>
+        </div>
+    </div>
     <section class="section card input">
         <div class="conteiner">
             <div class="titulo">
@@ -55,7 +65,7 @@
                 <form action="" class="inputs">
                     <div>
                         <p class="textos">Nome Completo</p>
-                        <input id="Name" placeholder="Nome Completo" type="text" class="input conta">
+                        <input id="nome" placeholder="Nome Completo" type="text" class="input conta">
                     </div>
                     <div>
                         <p class="textos">Email</p>
@@ -63,28 +73,30 @@
                     </div>
                     <div>
                         <p class="textos">Telefone</p>
-                        <input id="Telefone" placeholder="Telefone" type="number" class="input conta">
+                        <input maxlength="11" id="tel" placeholder="Telefone" type="number" class="input conta">
                     </div>
                     <div>
                         <p class="textos">Endereço</p>
-                        <input id="Endereco" placeholder="Endereço" type="text" class="input conta">
+                        <input id="end" placeholder="Endereço" type="text" class="input conta">
                     </div>
                     <div>
                         <p class="textos">Senha</p>
-                        <input id="Senha" placeholder="Senha" type="text" class="input conta">
+                        <input id="senha" placeholder="Senha" type="password" class="input conta">
                     </div>
                     <div>
                         <p class="textos">Confirmar Senha</p>
-                        <input id="ConfirmarSenha" placeholder="Confirmar Senha" type="text" class="input conta">
+                        <input id="Csenha" placeholder="Confirmar Senha" type="password" class="input conta">
                     </div>
                 </form>
-                <div class="button conta">
-                    <button onclick="verificar()" class="conta verificar">
-                        Verificar
-                    </button>
-                </div>
-                <div class="textos">
-                    Ja tem uma conta ? <a class="textos verde" href="./ContaLogar.html">Click aqui !</a>
+                <div class="button flex link">
+                    <div class="button conta">
+                        <button onclick="verificar()" class="conta verificar">
+                            Verificar
+                        </button>
+                    </div>
+                    <div class="textos">
+                        Ja tem uma conta ? <a class="textos verde" href="./ContaLogar.html">Click aqui !</a>
+                    </div>
                 </div>
             </div>
         </div>

@@ -44,6 +44,16 @@
             </ul>
         </div>
     </header>
+    <div id="container" class="container popup">
+        <div class="popup">
+            <div id="popup" class="textos">
+
+            </div>
+            <button onclick="mudarDePagina()" class="conta voltar">
+                Voltar
+            </button>
+        </div>
+    </div>
     <section class="section card logar input">
         <div class="conteiner">
             <div class="titulo">
@@ -55,15 +65,22 @@
                 <form action="" class="inputs">
                     <div>
                         <p class="textos">Email</p>
-                        <input placeholder="Email" type="email" class="input conta">
+                        <input id="Email" placeholder="Email" type="email" class="input conta">
                     </div>
                     <div>
                         <p class="textos">Senha</p>
-                        <input placeholder="Senha" type="text" class="input conta">
+                        <input id="Senha" placeholder="Senha" type="password" class="input conta">
                     </div>
                 </form>
-                <div class="textos">
-                    Não tem uma conta ? <a class="textos verde" href="./Conta.html">Click aqui !</a>
+                <div class="button flex link">
+                    <div class="button conta">
+                        <button onclick="logar()" class="conta verificar">
+                            Logar
+                        </button>
+                    </div>
+                    <div class="textos">
+                        Não tem uma conta ? <a class="textos verde" href="./Conta.html">Click aqui !</a>
+                    </div>
                 </div>
             </div>
         </div>
