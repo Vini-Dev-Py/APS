@@ -1,3 +1,12 @@
+// Volta pra home
+
+function goHome() {
+
+    var url = "index.html"
+
+    window.location.href = url
+}
+
 // muda de pagina
 
 function mudarDePagina() {
@@ -19,13 +28,14 @@ function mudarDePagina() {
 
 function verificar() {
     var nome = (document.getElementById("nome").value).toLowerCase();
+    var cpf = document.createElement("cpf").value;
     var email = (document.getElementById("Email").value).toLowerCase();
     var tel = document.getElementById("tel").value;
     var end = (document.getElementById("end").value).toLowerCase();
     var senha = document.getElementById("senha").value;
     var Csenha = document.getElementById("Csenha").value;
 
-    if (nome != "" && email != "" && tel != "" && end != "" && senha != "" && Csenha != "") {
+    if (nome != "" && cpf != "" && email != "" && tel != "" && end != "" && senha != "" && Csenha != "") {
 
         if (senha === Csenha) {
             popup.innerHTML = '<p class="textos">Registro feito com sucesso !</p>'
@@ -50,7 +60,7 @@ function logar() {
     var popup = document.getElementById("popup");
 
     if (email === "admin@email.com" && senha === "12345") {
-        popup.innerHTML = '<p class="textos">Login efetuado com sucesso !</p>'
+        popup.innerHTML = '<div class="display popup"><p class="textos">Abaixo-assinado em andamento</p><p class="textos">1317 pessoas cadastradas</p></div>'
         container.classList.toggle("active")
     } else {
         if (email === "" && senha === "") {

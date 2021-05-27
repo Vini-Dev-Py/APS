@@ -9,6 +9,15 @@
     overflow-x: hidden;
 }
 
+.width {
+    width: 30%;
+}
+
+.head.flex.itens.logo {
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
 .container.popup {
     width: 100vw;
     height: 100vh;
@@ -21,6 +30,13 @@
 
 .container.popup.active {
     display:flex;
+}
+
+.display.popup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .popup.button {
@@ -128,6 +144,48 @@ section {
     margin-bottom: 20px;
 }
 
+.flex.index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex.textos.texto.title.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.flex.textos.texto.title.container.esquerda {
+    align-items: flex-end;
+}
+
+.textos.texto.container {
+    width: 72%;
+}
+
+.button.flex.index.saibamais {
+    margin-top: 15px;
+}
+
+.flex.index.container.textoConta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.flex.textoConta.conteudo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex.textosConta.textos.conteudo {
+    width: 45%;
+}
+
 .section.card {
     width: 60%;
 
@@ -135,10 +193,6 @@ section {
     margin-right: auto;
     
     margin-bottom: 10px;
-}
-
-.section.card.input {
-    height: 60%;
 }
 
 .textos.paragrafo {
@@ -188,7 +242,7 @@ section {
     width: 100%;
 }
 
-.botao.centro.flex {
+.botao.centro.flex, .saibaMais {
     width: 250px;
     height: 40px;
     background-color: #00022E;
@@ -290,10 +344,6 @@ iframe.list.consequencias {
     justify-content: space-evenly;
 }
 
-.img.basico {
-    
-}
-
 footer {
     background-color: #00022E;
     position:absolute;
@@ -303,9 +353,13 @@ footer {
 
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-around !important;
 
     padding: 5px;
+}
+
+footer.index {
+    position: relative !important;
 }
 
 footer.no-absolute {
@@ -326,3 +380,165 @@ footer.no-absolute {
     justify-content: space-between;
 }
 
+@media screen and (max-width: 1025px) {
+    .head.flex.itens.logo {
+        font-family: Arial, sans-serif;
+        font-size: .8rem;
+    }
+
+    .list.itens a {
+        transition: all 1s;
+        font-size: .6rem;
+        font-family: Arial, sans-serif;
+        color: #fff;
+        font-weight: 500;
+    }
+    .textos.paragrafo {
+        text-align: justify;
+        font-size: .8rem;
+    }
+    .textos {
+        color: #000;
+        font-family: Arial, sans-serif;
+        font-size: .8rem;
+    }
+    .botao.centro.flex, .saibaMais {
+        width: 180px;
+        height: 30px;
+        background-color: #00022E;
+        border-radius: 10px;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .section.card {
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    img.img.sanitation {
+        width: 224px;
+        height: 144px;
+    }
+    .img.tamanho {
+        width: 320px;
+        height: 593px;
+    }
+    .img.tamanhomenor {
+        width: 684px;
+        height: 271px;
+    }
+    .flex.img {
+        width: 80%;
+    }
+    img.img.basico {
+        width: 80%;
+    }
+    .flex.conteudo.img {
+        flex-direction: column;
+    }
+    .width {
+        width: 100%;
+    }
+    iframe.list.consequencias {
+        height: 45rem;
+    }
+    img.infosimg {
+        width: 60%;
+    }
+    .section.card.input {
+        width: 80%;
+    }
+    footer.no-absolute {
+        position: relative !important;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .imgbrasil {
+        width: 100%;
+    }
+    .img.tamanhomenor {
+        width: 284px;
+        height: 151px;
+    }
+    iframe {
+        width: 90%;
+        height: 49rem;
+    }
+    iframe.list {
+        height: 10rem;
+    }
+    iframe.list.consequencias {
+        height: 61rem;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .head.flex.itens {
+        display: none;
+    }
+    .head.flex.itens.logo {
+        display: flex;
+    }
+    .flex.index {
+        flex-direction: column;
+    }
+    .saibaMais {
+        width: 130px;
+        height: 25px;
+        background-color: #00022E;
+        border-radius: 10px;
+        font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .flex.textos.texto.title.container.esquerda {
+        align-items: center;
+    }
+    .flex.textos.texto.title.container {
+        align-items: center;
+    }
+    .flex.itens.footer {
+        width: 60%;
+    }
+    .flex.itens.footer.nomes {
+        width: 60%;
+    }
+    img.img.sanitation {
+        width: 124px;
+        height: 84px;
+    }
+    .flex.img {
+        width: 30%;
+    }
+    .flex.img.texto {
+        width: 80%;
+    }
+    .section.card {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 10px;
+    }
+    .flex.textoConta.conteudo {
+        flex-direction: column;
+    }
+    .imgmobile {
+        width: 80% !important;
+    }
+    .flex.conteudo.img {
+        flex-direction: column;
+        width: 80%;
+    }
+    .flex.section.conteudo.mobile {
+        width: 80% !important;
+    }
+    .button.flex.link {
+        flex-direction: column;
+    }
+}
